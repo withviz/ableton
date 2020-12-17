@@ -1,3 +1,3 @@
 # ableton
 
-[instrument pack explorer](/packs/)
+[instrument pack explorer](https://withviz.github.io/ableton/packs/)
