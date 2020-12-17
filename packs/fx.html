@@ -1,104 +1,113 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Ableton drum kits & audio racks</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+<head>
+  <title>Ableton drum kits & audio racks</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- datatables-->
-    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
-    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
-
-
-  </head>
-  <body>
-    <div class="container-fluid">
-
-      <h1>Ableton drum kits & audio fx racks</h1>
-    
-  <p class="lead">Explore the macro options for some <a href="https://www.ableton.com/en/packs/#?instruments=drums"> instrument packs.</a></p>
-
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Drum Kits</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="fx.html">Audio FX</a>
-        </li>
-
-      </ul>
+  <!-- datatables-->
+  <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+  <script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
 
 
 
-<p></p>
-      <table id="fx" class="display" style="width:100%">
-        <thead>
-            <tr> 
-                <th>Collection</th>
-                <th>FX type</th>
-                <th>Rack</th>
-                <th>Option 1</th>
-                <th>Option 2</th>
-                <th>Option 3</th>
-                <th>Option 4</th>
-                <th>Option 5</th>
-                <th>Option 6</th>
-                <th>Option 7</th>
-                <th>Option 8</th>
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-                <th>Collection</th>
-                <th>FX type</th>
-                <th>Rack</th>
-                <th>Option 1</th>
-                <th>Option 2</th>
-                <th>Option 3</th>
-                <th>Option 4</th>
-                <th>Option 5</th>
-                <th>Option 6</th>
-                <th>Option 7</th>
-                <th>Option 8</th>
-            </tr>
-        </tfoot>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <h1>Ableton drum kits & audio fx racks</h1>
+
+    <p class="lead">Explore the macro options for some <a href="https://www.ableton.com/en/packs/#?instruments=drums">
+        instrument packs.</a></p>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Drum Kits</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="fx.html">Audio FX</a>
+      </li>
+
+    </ul>
+
+
+
+    <p></p>
+    <table id="fx" class="display" style="width:100%">
+      <thead>
+        <tr>
+          <th>Collection</th>
+          <th>FX type</th>
+          <th>Rack</th>
+          <th>Option 1</th>
+          <th>Option 2</th>
+          <th>Option 3</th>
+          <th>Option 4</th>
+          <th>Option 5</th>
+          <th>Option 6</th>
+          <th>Option 7</th>
+          <th>Option 8</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <th>Collection</th>
+          <th>FX type</th>
+          <th>Rack</th>
+          <th>Option 1</th>
+          <th>Option 2</th>
+          <th>Option 3</th>
+          <th>Option 4</th>
+          <th>Option 5</th>
+          <th>Option 6</th>
+          <th>Option 7</th>
+          <th>Option 8</th>
+        </tr>
+      </tfoot>
     </table>
   </div>
 
-</div>
-      <script>
-      $(document).ready(function() {
-        $('#fx').DataTable( {
-           
-            "ajax": "fxobjects.json",
-            "columns": [
-                { "data": "Collection" },
-                { "data": "FX type" },
-                { "data": "rack"},
-                { "data": "Option 1" },
-                { "data": "Option 2" },
-                { "data": "Option 3" },
-                { "data": "Option 4" },
-                { "data": "Option 5" },
-                { "data": "Option 6" },
-                { "data": "Option 7" },
-                { "data": "Option 8" }
-            ]
-        } );
-    } );
+  </div>
+  <div class="container-fluid">&copy <a href="https://withviz.github.io">withviz.github.io</a></div>
+  <script>
+    $(document).ready(function () {
+      $('#fx').DataTable({
+
+        "ajax": "fxobjects.json",
+        "columns": [
+          { "data": "Collection" },
+          { "data": "FX type" },
+          { "data": "rack" },
+          { "data": "Option 1" },
+          { "data": "Option 2" },
+          { "data": "Option 3" },
+          { "data": "Option 4" },
+          { "data": "Option 5" },
+          { "data": "Option 6" },
+          { "data": "Option 7" },
+          { "data": "Option 8" }
+        ]
+      });
+    });
   </script>
-    <!-- Optional JavaScript -->
+  <!-- Optional JavaScript -->
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
 
-  </body>
+</body>
+
 </html>
